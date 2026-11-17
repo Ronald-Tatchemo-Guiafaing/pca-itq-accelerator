@@ -26,7 +26,6 @@ void pca_itq_accelerator(
     int accumulator[C_DIM];
     #pragma HLS ARRAY_PARTITION variable=accumulator complete dim=1
 
-    // bias lets the PC subtract the training mean: acc = bias + x * W
     init_loop: for (int i = 0; i < C_DIM; i++) {
         #pragma HLS UNROLL
         accumulator[i] = bias[i];
