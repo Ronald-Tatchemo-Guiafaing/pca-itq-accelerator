@@ -8,3 +8,5 @@
 *.hw/
 *.sim/
 *.ip_user_files/
+plate/dataset/
+plate/out/
